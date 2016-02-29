@@ -1,0 +1,1218 @@
+body {
+    color: #1e1e1e;
+    font: 12px 'Microsoft YaHei', 'Hiragino Sans GB', Arial, sans-serif;
+    min-width: 980px;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, ul, ol, li, pre, form, fieldset, legend, button, select, input, textarea {
+    margin: 0;
+    padding: 0;
+    color: #717171;
+}
+
+div {
+    display: block;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+i {
+    font-style: normal;
+}
+
+input, button, select, textarea {
+    outline: 0
+}
+
+textarea {
+    resize: none
+}
+
+.em {
+    font-style: normal;
+    top: 8px;
+    display: block;
+    width: 100px;
+    left: 20px;
+    position: absolute
+}
+
+h1, h2, h3, h4, h5, h6, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+/*********************a*************************/
+a {
+    outline: 0;
+    color: #00a1d6;
+    text-decoration: none;
+    cursor: pointer
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
+
+a:hover {
+    color: #f25d8e;
+    text-decoration: none;
+}
+
+a:focus {
+    -moz-outline-style: none
+}
+
+a img {
+    border: 0
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/****************************************************/
+address, caption, cite, code, dfn, em, i, var {
+    font-style: normal;
+    font-weight: normal
+}
+
+p, span {
+    margin: 0;
+    padding: 0
+}
+
+/************************************************************/
+/************************************************************/
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #f1f1f1;
+    margin-top: 28px;
+}
+
+.code {
+    border: 1px solid #ced1d8;
+    background: #f9fafc;
+    border-radius: 6px;
+    padding: 10px
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    font-size: 0
+}
+
+*.clearfix {
+    zoom: 1
+}
+
+label {
+    float: left;
+    font-size: 12px
+}
+
+label a {
+    color: #35a3d6;
+    text-decoration: none
+}
+
+/************************ box ***********************************/
+.box {
+    position: relative;
+    overflow: hidden
+}
+
+.box .yzm {
+    width: 110px;
+    height: 30px;
+    position: absolute;
+    left: 190px;
+    top: 30px;
+    margin-top: 4px
+}
+
+.conR .box .jz {
+    display: block;
+    margin-top: 8px;
+    margin-right: 13px
+}
+
+.box label em {
+    font-style: normal;
+    top: 8px;
+    display: block;
+    width: 100px;
+    left: 20px;
+    position: absolute
+}
+
+.box label strong {
+    color: #bbb;
+    font-weight: normal;
+    width: 200px;
+    display: block;
+    top: 0;
+    left: 60px;
+    position: absolute
+}
+
+/***********************************************************/
+
+/**********************     user *********************************/
+.user_id_password {
+    height: 20px;
+    width: 395px;
+    float: left;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    padding: 10px;
+    color: #a5a5a5
+}
+
+/*************************************************************/
+/***************b-icon**************************************/
+.b-icon {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    background: url(http://static.hdslb.com/images/base/icons.png) no-repeat
+}
+
+.b-icon.b-icon-A {
+    background-position: -471px -919px
+}
+
+.b-icon.b-icon-B {
+    background-position: -471px -982px
+}
+
+/**********************************************************/
+
+.topcon {
+    color: #222;
+    position: relative;
+    z-index: 10000;
+}
+
+.top {
+    height: 42px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: relative;
+    z-index: 10000;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+.top .i-link {
+    padding: 0 15px;
+    transition: .15s background-color;
+    font-size: 13px
+}
+
+.top .i-link:hover {
+    color: #00a1d6;
+    background: rgba(255, 255, 255, 0.24)
+}
+
+.top .header {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    z-index: 10000;
+    width: 980px;
+    zoom: 1
+}
+
+.top .header:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    font-size: 0
+}
+
+/********/
+.top a {
+    color: #222;
+}
+
+.top .topnav {
+    float: left;
+    height: 42px;
+    font-size: 12px
+}
+
+.top .topnav ul {
+    zoom: 1
+}
+
+.top .topnav ul:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    font-size: 0
+}
+
+.top .topnav ul li {
+    float: left;
+    text-align: center;
+    line-height: 42px;
+    position: relative
+}
+
+.top .topnav ul li a.i-link {
+    height: 100%;
+    display: block
+}
+
+.top .topnav ul li.home {
+    margin-left: -10px;
+    background: url(http://static.hdslb.com/images/base/icons.png) no-repeat -910px -74px;
+}
+
+.top .topnav ul li.home .i-link {
+    width: 50px;
+    height: 42px;
+    padding: 0 0 0 20px
+}
+
+.top .topnav li.huayou, .top .topnav li.live {
+    position: relative;
+}
+
+/**.top .topnav ul li .i_div {
+    position: absolute;
+    display: none;
+    top: 42px;
+    left: 0;
+    border-radius: 0 0 4px 4px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 2px 4px;
+    overflow: hidden;
+    z-index: 15
+}
+.top .topnav ul li:hover .i_div {
+    display: block
+}
+
+.top .topnav ul li .i_div.game {
+    z-index: 9870;
+    width: 430px;
+    height: 236px;
+    overflow: inherit;
+    font-size: 14px;
+    overflow: hidden
+}************/
+.topbox {
+    float: right;
+    font-size: 12px
+}
+
+.topbox ul.menu {
+    float: left;
+    position: relative
+}
+
+.topbox li.u-i {
+    float: left;
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    position: relative
+}
+
+.topbox li.u-i#i_menu_login_reg {
+    padding: 0 10px
+}
+
+.topbox li.u-i#i_menu_login_reg .i-link {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 0 10px;
+    color: #222
+}
+
+.topbox li.u-i#i_menu_login_reg .i-link span {
+    display: block
+}
+
+.topbox li.u-i#i_menu_login_reg .i-link:hover {
+    color: #00a1d6
+}
+
+.topbox li.u-i#i_menu_login_reg .s-line {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    border-left: 1px solid #222;
+    height: 12px;
+    margin-top: 16px;
+    vertical-align: top
+}
+
+.topsearch {
+    position: relative;
+    float: right;
+    height: 32px;
+    margin: 5px 20px 5px 0
+}
+
+.topsearch #topsearchForm {
+    display: block;
+    background-color: #fff;
+    border-radius: 16px;
+    padding-right: 30px;
+    height: 30px;
+    transition: .2s border-color,1s padding-right;
+    border: 1px solid #ccd0d7
+}
+
+.topsearch #topsearchForm:hover {
+    padding-right: 80px;
+    transition: 0.5s padding-right;
+
+}
+
+.topsearch #topsearchKeyword {
+    float: left;
+    width: 78px;
+    color: #99a2aa;
+    font-size: 12px;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0 0 10px;
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
+    transition: .2s width
+}
+
+.topsearch .topsearchSubmit {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    min-width: 0;
+    cursor: pointer;
+    height: 32px;
+    background: url('http://static.hdslb.com/images/base/icons.png') -786px -721px;
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+/***************************************/
+.topbox li.u-i.b-post {
+    margin-right: 0
+}
+
+.topbox li.u-i.b-post:hover a.i-link {
+    background-image: url('toppostHover.png')
+}
+
+.topbox li.u-i.b-post a.i-link {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 58px;
+    z-index: 10;
+    background: url('toppost.png') center center no-repeat;
+    height: 48px;
+    border-radius: 0 0 5px 5px;
+    color: #fff !important;
+    font-size: 14px
+}
+
+.topbox li.u-i.b-post .s-menu {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    top: 42px;
+    right: 0;
+    z-index: 15;
+    width: 144px;
+    border: 0;
+    transition: .2s;
+    border-radius: 0 0 4px 4px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 2px 4px;
+    opacity: 0;
+    overflow: hidden
+}
+
+.topbox li.u-i.b-post .s-menu li {
+    cursor: pointer;
+    text-align: center;
+    width: 72px;
+    height: 64px;
+    transition: .1s;
+    float: left
+}
+
+.topbox li.u-i.b-post .s-menu li:hover {
+    background-color: #e5e9ef
+}
+
+.topbox li.u-i.b-post .s-menu li .b-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto 8px
+}
+
+.topbox li.u-i.b-post .s-menu li a {
+    display: block;
+    color: #f25d8e;
+    padding: 14px 12px 0 12px;
+    line-height: 1
+}
+
+.topbox li.u-i.b-post .s-menu li em {
+    display: block
+}
+
+.topbox li.u-i.b-post:hover .s-menu {
+    visibility: visible;
+    opacity: 1
+}
+
+/***************************************/
+.topsearch .topsearchSubmit:hover {
+    background-position: -723px -721px
+}
+
+.bgtop {
+    background: url('top.png');
+    width: 980px;
+    height: 106px;
+    margin: 0 auto
+}
+
+.topbg {
+    width: 100%;
+    height: 106px;
+    background: url('topbg.png') repeat-x
+}
+
+/**    ***/
+.hfHeader {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hfHeader .lin {
+    width: 100%;
+    height: 25px;
+    border-bottom: 2px solid #ddd;
+}
+
+.hfHeader .tit {
+    width: 120px;
+    height: 47px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.conBd {
+    position: relative;
+    overflow: hidden;
+}
+
+.conL {
+    width: 480px;
+    float: left;
+    line-height: 1;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.conL .inner {
+    margin: 0 30px;
+    padding: 30px;
+}
+
+#loginQrcode {
+    background: url('https://static-s.bilibili.com/account/img/loadTV.gif') center no-repeat;
+}
+
+.conL .qrcode {
+    width: 140px;
+    height: 140px;
+    margin: 10px auto;
+}
+
+.conL .qrcode .can {
+    width: 140px;
+    height: 140px;
+    background: url('qrcode.png') center no-repeat;
+}
+
+.conL .qrTitle {
+    color: #222;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.conL .qrText {
+    font-size: 14px;
+    position: relative;
+    z-index: 9;
+}
+
+#appLink {
+    font-size: 12px;
+    color: #00a1d6;
+}
+
+#appLink:hover {
+    color: #f25d8e;
+}
+
+.conL .bg {
+    position: absolute;
+    left: -5px;
+    bottom: -40px;
+}
+
+.conL #qrTips {
+    background: #fff;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 152px;
+    z-index: 2;
+}
+
+.conL #tv {
+    background: url('https://static-s.bilibili.com/account/img/tv.gif') 0 0 no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -20px;
+    left: 163px;
+    z-index: 9;
+}
+
+.conL[status='expired'] #qrReload {
+    display: block;
+}
+
+#qrReload {
+    background: rgba(255, 255, 255, 0.8);
+    color: #0594c7;
+    display: none;
+    font-size: 12px;
+    position: absolute;
+    top: 40px;
+    left: 170px;
+    width: 140px;
+    height: 140px;
+    z-index: 3;
+}
+
+#qrReload .reloadBtn {
+    background: url('https://static-s.bilibili.com/account/img/qr-refresh.png') 8px 3px no-repeat #fff;
+    border-radius: 3px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin: 40px auto;
+    width: 60px;
+    padding: 43px 0 5px;
+}
+
+#qrReload .qrTitle {
+    background: #fff;
+    position: absolute;
+    top: 145px;
+    left: -5px;
+    padding: 5px;
+    width: 140px;
+}
+
+#downloadApp {
+    background: #fff;
+    display: none;
+    padding: 20px 0;
+    position: absolute;
+    top: 10px;
+    left: 166px;
+    z-index: 4;
+}
+
+#appQrcode {
+    background: url('https://static-s.bilibili.com/account/img/qrcode-app.png') center;
+}
+
+.contentBd .line {
+    float: left;
+    width: 1px;
+    height: 240px;
+    background-color: #ddd;
+    position: absolute;
+    margin: 0 auto 0 50%;
+    top: 50px;
+}
+
+.conR {
+    float: right;
+    position: relative;
+    margin-right: 42px;
+    margin-top: 20px;
+}
+
+/**********************/
+.conR {
+    float: right;
+    position: relative;
+    margin-right: 42px;
+    margin-top: 20px
+}
+
+.conR .email {
+    height: 18px;
+    width: 388px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 10px 0 10px 10px;
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 30px
+}
+
+.conR span {
+    font-size: 12px;
+    line-height: 30px;
+    color: #f66495;
+    display: block
+}
+
+.conR .begin {
+    top: 1px
+}
+
+.conR .password {
+    height: 18px;
+    width: 388px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 10px 0 10px 10px;
+    color: #aaa;
+    font-size: 14px
+}
+
+.conR p {
+    position: absolute;
+    font-size: 12px;
+    color: #00a0d8;
+    right: 10px;
+    top: 115px
+}
+
+.conR .box {
+    position: relative;
+    overflow: hidden
+}
+
+.conR .code {
+    height: 18px;
+    width: 170px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 10px 0 10px 10px;
+    color: #aaa;
+    font-size: 14px;
+    position: relative
+}
+
+/*.conR .sjYzm {
+    width: 19px;
+    height: 19px;
+
+    position: absolute;
+    right: 222px;
+    top: 48px
+}
+*/
+
+
+
+.conR .box .sjYzm {
+    width: 110px;
+    height: 30px;
+    position: relative;
+    left: 0;
+    top: -5px;
+    margin-top: 4px;
+    display: inline-block;
+}
+
+.conR .box .yzm{
+    background: url('https://static-s.bilibili.com/account/img/right_s.png') no-repeat scroll 0 0 transparent;
+    width: 110px;
+    height: 30px;
+    position: relative;
+    left: 6px;
+    top: 5px;
+    margin-top: 4px;
+    display: none/*验证成功后转为inline-block*/
+}
+
+#captchaImg:
+
+.conR .box .jz {
+    display: block;
+    margin-top: 8px;
+    margin-right: 13px;
+    color: #717171;
+}
+
+.conR .mima {
+    position: absolute;
+    font-size: 12px;
+    color: #00a0d8;
+    right: 2px;
+    cursor: pointer;
+    top: 9px
+}
+
+.conR .mima:hover {
+    color: #f40
+}
+
+.conR .box p {
+    position: relative;
+    font-size: 12px;
+    color: #00a0d8;
+    right: 52px;
+    top: 31px;
+    margin-top: 10px;
+    cursor: pointer
+}
+
+.conR .box p:hover {
+    color: #f40
+}
+
+.conR .bjy {
+    font-size: 12px;
+    color: #333;
+    display: inline
+}
+
+.conR .login {
+    height: 38px;
+    width: 184px;
+    border: 1px solid #0381aa;
+    border-radius: 2px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background-color: #00a7de;
+    cursor: pointer;
+    margin-top: 10px
+}
+
+.conR .login:hover {
+    background: #00bee7
+}
+
+.conR .zhuce {
+    color: #555;
+    display: inline-block;
+    height: 36px;
+    width: 184px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 10px 0 0 27px
+}
+
+.conR .zhuce:hover {
+    background: #f7f7f7
+}
+
+.conR .way {
+    color: #00a0d8;
+    font-size: 12px;
+    margin-top: 10px
+}
+
+.conR .way li {
+    float: left;
+    background: url('https://static-s.bilibili.com/account/img/snsicon.png') no-repeat
+}
+
+.conR .way a {
+    color: #00a0d8
+}
+
+.conR .way a:hover {
+    color: #f40
+}
+
+.conR .way .weibo {
+    height: 21px;
+    padding-left: 27px;
+    background-position: 0 0;
+    padding-top: 3px
+}
+
+.conR .way .qq {
+    height: 21px;
+    background-position: 0 -41px;
+    padding-left: 29px;
+    margin-left: 50px;
+    padding-top: 3px
+}
+
+.conR .way .none {
+    background: none;
+    margin-left: 35px;
+    padding-top: 3px
+}
+
+/********************/
+
+/***********************************************/
+.footer {
+    width: 100%;
+    padding-top: 20px;
+    color: #99a2aa;
+    text-align: center;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serifsans-serif, sans-serif
+}
+
+.footer .footerWrp {
+    height: 230px;
+    background-color: #f6f9fa;
+    padding-top: 30px
+}
+
+.footer a {
+    color: #222
+}
+
+.footer a:hover {
+    color: #00a1d6
+}
+
+.footer .left {
+    line-height: 24px;
+    *line-height: 24px
+}
+
+.footer .left a {
+    color: #99a2aa
+}
+
+.footer .left a:hover {
+    color: #222
+}
+
+.footer .right {
+    float: right;
+    line-height: 22px;
+    *line-height: 24px;
+    margin: 0 0 0 5px !important
+}
+
+.footer .right p span {
+    color: #222
+}
+
+.footer .footerCnt {
+    width: 980px;
+    margin: 0 auto
+}
+
+.footer .bostonPostcards {
+    list-style: none;
+    height: 80px;
+    float: left;
+    margin: 0 auto 40px;
+}
+
+.footer .bostonPostcards li:first-child {
+    border-left: 0;
+    padding-left: 0 !important
+}
+
+.footer .bostonPostcards li {
+    float: left;
+    text-align: left;
+    list-style: none;
+    width: 296px;
+    height: 100px;
+    padding-right: 10px;
+    line-height: 22px;
+    border-left: solid 1px #e5e9ef;
+    padding-left: 30px;
+    font-size: 14px
+}
+
+.footer .bostonPostcards li .tips {
+    margin-bottom: 12px
+}
+
+.footer .bostonPostcards li .cards {
+    float: left;
+    width: 86px;
+    position: relative
+}
+
+.footer .bostonPostcards li .cards.taobao {
+    position: relative;
+    background: url('https://static-s.bilibili.com/images/base/b-taobao.png') no-repeat;
+    width: 100px;
+    height: 40px;
+    margin-bottom: -23px;
+    margin-top: 5px
+}
+
+.footer .partner {
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    height: 80px;
+    float: left
+}
+
+.footer .partner .partnerBanner {
+    background: url('https://static-s.bilibili.com/images/v2images/footpic.gif');
+    width: 96px;
+    height: 70px;
+    margin: 3px 10px 3px 0
+}
+
+.footer .block.right {
+    position: relative;
+    width: 310px
+}
+
+.footer .block.right div {
+    position: relative;
+    width: 65px;
+    height: 80px;
+    float: left;
+    margin-right: 25px
+}
+
+.footer .block.right em {
+    position: relative;
+    width: 70px;
+    height: 16px;
+    float: left;
+    bottom: 0;
+    left: 0;
+    text-align: center
+}
+
+.footer .block.right .pic {
+    position: relative;
+    width: 65px;
+    height: 65px
+}
+
+.footer .block.right .phone .pic {
+    background: url("http://static.hdslb.com/images/base/icons.png") no-repeat -1020px -190px
+}
+
+.footer .block.right .phone .pic:hover {
+    background-position: -1086px -190px
+}
+
+.footer .block.right .weibo .pic {
+    background: url("http://static.hdslb.com/images/base/icons.png") no-repeat -1020px -318px
+}
+
+.footer .block.right .weibo .pic:hover {
+    background-position: -1086px -318px
+}
+
+.footer .block.right #weixin .pic {
+    color: #222;
+    background: url("http://static.hdslb.com/images/base/icons.png") no-repeat -1020px -62px
+}
+
+.footer .block.right #weixin .pic:hover {
+    background-position: -1086px -62px
+}
+
+.footer .block.right .qrcodeBoxWrp {
+    width: 130px;
+    height: 130px;
+    background: #fff;
+    margin-top: -140px;
+    right: -57px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s
+}
+
+.footer .block.right .qrcodeBox {
+    width: 130px;
+    height: 130px;
+    border: 1px solid #e5e9ef
+}
+
+.footer .block.right .qrcodeBox.qrcodeApp {
+    background: url('https://static-s.bilibili.com/images/base/app-qrcode.png') center center no-repeat
+}
+
+.footer .block.right .qrcodeBox.qrcodeWeibo {
+    background: url('https://static-s.bilibili.com/images/base/weibo-qrcode.png') center center no-repeat
+}
+
+.footer .block.right .qrcodeBox.qrcodeWeixin {
+    background: url('https://static-s.bilibili.com/ad-images/wx.jpg') center center no-repeat
+}
+
+.footer .block.right .qrcodeBox .qrcodeBoxArrow {
+    width: 130px;
+    height: 143px;
+    background: url('https://static-s.bilibili.com/ad-images/wx-arrow.png') bottom center no-repeat
+}
+
+.footer .block.right .phone:hover .qrcodeBoxWrp, .footer .block.right .weibo:hover .qrcodeBoxWrp, .footer .block.right #weixin:hover .qrcodeBoxWrp {
+    visibility: visible;
+    opacity: 1
+}
+
+/**************************************************/
+#globalMask {
+    background: #111;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: -9999px;
+    width: 100%;
+    height: 100%;
+    transition: opacity .2s ease;
+    z-index: 99;
+}
+
+/********************/
+.uiWidgetContent {
+    border: 1px solid #dddddd;
+    background: #fff !important;
+    color: #333333;
+}
+
+.uiWidget {
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+.uiMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    outline: none;
+}
+
+.uiAutocomplete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: default;
+}
+
+.uiFront {
+    z-index: 100;
+}
+
+.uiHelperHiddenAccessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.bilibiliSuggest {
+    border: 1px solid #e5e9ef;
+    position: absolute;
+    background: #fff;
+    z-index: 10020;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 2px 4px;
+    padding-bottom: 5px;
+}
+
+.block {
+    border-top: 1px solid #ddd;
+    padding: 20px 0 20px 16px
+}
+
+.form-post.filter .block:first-child {
+    border: none
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right
+}

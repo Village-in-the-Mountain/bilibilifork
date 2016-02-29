@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <title>哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ 乾杯~ - bilibili</title>
+    <meta name="description" content="bilibili是一家弹幕站点,大家可以在这里找到许多的欢乐.">
+    <meta name="keywords" content="B站 弹幕 字幕 AMV MAD MTV ANIME 动漫 动漫音乐 游戏 游戏解说 ACG galgame 动画 番组 新番 初音 洛天依 vocaloid">
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="zonghe.css">
+    <script type="text/javascript" src="login.js"></script>
+</head>
+<body>
+<div class="topcont">
+    <div class="top">
+        <div class="header">
+            <div class="topnav">
+                <ul>
+                    <li class="home">
+                        <a class="i-link" href="http://www.bilibili.com/">
+                            <span>主站</span>
+                        </a>
+                    </li>
+                    <li class="hbilibili">
+                        <a class="i-link" target="_blank" href="http://h.bilibili.com/" title="画友">画友</a>
+                    <li class="game">
+                        <a class="i-link" target="_blank" href="http://game.bilibili.com/" title="游戏中心">游戏中心</a>
+                    </li>
+                    <li class="live">
+                        <a class="i-link" target="_blank" href="http://live.bilibili.com/" title="直播">直播</a>
+                    </li>
+                    <li class="zb">
+                        <a class="i-link" target="_blank" href="http://zb.bilibili.com/" title="周边">周边</a>
+                    </li>
+                    <li class="yoo">
+                        <a class="i-link" target="_blank" href="http://yoo.bilibili.com/" title="日本游">日本游</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="topbox">
+                <ul class="menu">
+                    <li id="i_menu_login_reg" class="u-i" style="display: list-item;">
+                        <a id="i_menu_login_btn" class="i-link login" href="https://account.bilibili.com/login">
+                            <span>登录</span>
+                        </a>
+                        <i class="s-line"></i>
+                        <a id="i_menu_register_btn" class="i-link reg" href="https://www.bilibili.com/register">
+                            <span>注册</span>
+                        </a>
+                    </li>
+                    <li class="u-i b-post">
+                        <a class="i-link" href="http://member.bilibili.com/video_submit.html?tpl=upload"
+                           target="_blank">投稿</a>
+                        <ul class="s-menu">
+                            <li>
+                                <a href="http://member.bilibili.com/video_submit.html?tpl=upload" target="_blank">
+                                    <i class="b-icon b-icon-A"></i>
+                                    <em>视频投稿</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://member.bilibili.com/#video_manage" target="_blank">
+                                    <i class="b-icon b-icon-B"></i>
+                                    <em>投稿管理</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="topsearch">
+                <form id="topsearchForm" action="http://search.bilibili.com/all" target="_blank">
+                    <input name="keyword" type="text" id="topsearchKeyword" autocomplete="off" accesskey="s"
+                           placeholder="搜索">
+                    <button type="submit" class="topsearchSubmit"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="topbg">
+    <div class="bgtop"></div>
+</div>
+<div class="hf">
+    <div class="hfHeader">
+        <div class="lin">
+            <div class="tit">
+                <img src="https://static-s.bilibili.com/account/img/t2.png" alt="登陆">
+            </div>
+        </div>
+        <div class="conBd">
+            <div class="conL">
+                <div class="inner">
+                    <div class="qrcode" id="loginQrcode">
+                        <div class="can" style="display: none;">
+                            <img src="qrcode.png" style="display: block;">
+                        </div>
+                    </div>
+                    <p class="qrTitle">扫描二维码登录</p>
+
+                    <p class="qrText">
+                        请使用
+                        <a id="appLink" target="_blank" href="http://app.bilibili.com/">哔哩哔哩客户端</a>
+                    </p>
+                    <img class="bg" src="https://static-s.bilibili.com/account/img/2233login.png" alt="">
+                    <img id="qrTips" src="https://static-s.bilibili.com/account/img/qr-tips.png" style="display: none;">
+
+                    <div id="tv" style="display: block;background-position-x: 0px;"></div>
+                    <div id="qrReload">
+                        <div class="reloadBtn">点击刷新</div>
+                        <p class="qrTitle">二维码已失效</p>
+                    </div>
+                    <div id="downloadApp">
+                        <div class="qrcode" id="appQrcode"></div>
+                        <p class="qrTitle">扫码下载客户端</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="conR">
+                <form id="frm" action="/login/dologin" method="post" onsubmit="return false;">
+                    <input type="hidden" name="act" value="login">
+                    <input type="hidden" name="gourl" value="http://www.bilibili.com/">
+                    <input type="hidden" name="keeptime" value="604800">
+
+                    <div class="box">
+                        <span id="userIdSpt">&nbsp;</span>
+                        <label for="userIdTxt"></label><input id="userIdTxt"
+                                                              class="email jvBoxDefault uiAutocompleteInput"
+                                                              style="margin-bottom: 0" type="text"
+                                                              placeholder="你的手机号/邮箱" name="userid" maxlength="50"
+                                                              autocomplete="off">
+                    </div>
+                    <div class="box">
+                        <span id="userPwdTip" style="visibility: hidden">&nbsp;喵，你没输入密码吗？</span>
+                        <input id="passwdTxt" class="password" type="password" placeholder="密码" name="pwd"
+                               maxlength="30" autocomplete="off">
+                        <a href="https://account.bilibili.com/resetpwd" class="mima">忘记密码?</a>
+                        <span class="begin" style="line-height: 30px;">&nbsp;</span>
+                        <label for="vdCodeTxt"></label><input id="vdCodeTxt" class="code jvBoxDefault"
+                                                              style="text-transform: uppercase;" type="text"
+                                                              name="vdcode" placeholder="验证码" maxlength="10"
+                                                              autocomplete="off">
+                        <img class="sjYzm" id="captchaImg" src="https://account.bilibili.com/captcha"  alt="">
+                        <div class="yzm"></div>
+                        <p id="refreshCaptchaImg">换一张</p>
+                        <div class="box">
+                            <label style="height: 25px;position: relative;">
+                                <input class="jz" type="checkbox" value="604800" name="keeptime" checked="checked">
+                                <em>
+                                    记住我
+                                    <strong>不是自己的电脑上不要勾选此项</strong>
+                                </em>
+                            </label>
+                        </div>
+                    </div>
+                    <input id="loginbtn" class="login" type="submit" value="登录">
+                    <a class="zhuce" href="https://account.bilibili.com/register/phone">注册</a>
+                </form>
+                <ul class="way">
+                    <a href="https://api.weibo.com/oauth2/authorize?client_id=2841902482&redirect_uri=http%3A%2F%2Fmember.bilibili.com%2Flogin%2Fsnsback%3Fsns%3Dweibo&response_type=code">
+                        <li class="weibo">微博账号登录</li>
+                    </a>
+                    <a href="https://graph.qq.com/oauth/show?which=Login&display=pc&client_id=101135748&redirect_uri=http%3A%2F%2Fmember.bilibili.com%2Flogin%2Fsnsback%3Fsns%3Dqq&response_type=code">
+                        <li class="qq">QQ账号登录</li>
+                    </a>
+                </ul>
+                <span id="divMag" class="clsTip"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footerWrp">
+        <div class="footerCnt clearfix">
+            <ul class="bostonPostcards">
+                <li>
+                    <div class="tips">Bilibili</div>
+                    <div class="cards">
+                        <a target="_blank" href="http://www.bilibili.com/html/aboutUs.html">关于我们</a>
+                    </div>
+                    <div class="cards">
+                        <a target="_blank" href="http://www.bilibili.com/html/friends-links.html">友情链接</a>
+                    </div>
+                    <a target="_blank" href="https://bilibili2233.taobao.com/">
+                        <div class="cards taobao">
+                            <em></em>
+                        </div>
+                    </a>
+
+                    <div class="cards">
+                        <a target="_blank" href="http://www.bilibili.com/html/contact.html">联系我们</a>
+                    </div>
+                    <div class="cards">
+                        <a target="_blank" href="http://www.bilibili.com/html/join.html">加入我们</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tips">帮助</div>
+                    <div class="cards">
+                        <a target="_blank" href="http://www.bilibili.com/html/help.html">帮助中心</a>
+                    </div>
+                    <div class="cards">
+                        <a target="_blank" href="http://www.bilibili.com/html/userdel_list.html">补档认领处</a>
+                    </div>
+                    <div class="cards">
+                        <a target="_blank" href="http://www.bilibili.com/html/duty.html">资源免责声明</a>
+                    </div>
+                    <div class="cards">
+                        <a target="_blank" href="http://www.bilibili.com/html/copyright.html">侵权申诉</a>
+                    </div>
+                    <div class="cards">
+                        <a target="_blank" href="http://bbs.biligame.com/forum.php?mod=forumdisplay&fid=44">建议/BUG汇报</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tips">传送门</div>
+                    <div class="cards">
+                        <a target="_blank" href="http://www.bilibili.com/video/av120040/">高级弹幕</a>
+                    </div>
+                    <div class="cards">
+                        <a target="_blank" href="http://www.bilibili.com/html/cele.html">名人堂</a>
+                    </div>
+                    <div class="cards">
+                        <a target="_blank" href="http://www.bilibili.com/lottery">活动专题页</a>
+                    </div>
+                    <div class="cards">
+                        <a target="_blank" href="http://comic.qq.com/news/">资讯</a>
+                    </div>
+                    <div class="cards">
+                        <a target="_blank" href="http://h.bilibili.com/wallpaper?action=list">壁纸站</a>
+                    </div>
+                    <div class="cards">
+                        <a target="_blank" href="http://account.bilibili.com/answer/addq">分院帽计划</a>
+                    </div>
+                    <div class="cards">
+                        <a target="_blank" href="http://activity.bilibili.com/">活动中心</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="partner">
+                <div class="block left">
+                    <div class="partnerBanner"></div>
+                </div>
+                <div class="block left" style="margin:0 0 0 10px;">
+                    <p>
+                        广播电视节目制作许可证：
+                        <span>(沪)字第1248号</span>
+                    </p>
+
+                    <p>
+                        网络文化经营许可证
+                        <span>沪网文[2013]0480-056</span>
+                    </p>
+
+                    <p>
+                        信息网络传播视听节目许可证
+                        <span>0910417</span>
+                    </p>
+                </div>
+                <div class="block left" style="margin:0 0 0 10px;">
+                    <p>
+                        互联网ICP备案
+                        <span>沪ICP备13002172号</span>
+                    </p>
+
+                    <p>
+                        沪ICP证:
+                        <span>沪B2-20100043</span>
+                    </p>
+                </div>
+            </div>
+            <div class="block right">
+                <a target="_blank" href="http://app.bilibili.com/">
+                    <div class="phone">
+                        <div class="pic"></div>
+                        <em>手机端下载</em>
+
+                        <div class="qrcodeBoxWrp">
+                            <div class="qrcodeBox qrcodeApp">
+                                <div class="qrcodeBoxArrow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="http://weibo.com/bilibiliweb?is_hot=1">
+                    <div class="weibo">
+                        <div class="pic"></div>
+                        <em>新浪微博</em>
+
+                        <div class=" qrcodeBoxWrp">
+                            <div class="qrcodeBox qrcodeWeibo">
+                                <div class="qrcodeBoxArrow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a id="weixin">
+                    <div class="pic"></div>
+                    <em>官方微信</em>
+
+                    <div class="qrcodeBoxWrp">
+                        <div class="qrcodeBox qrcodeWeixin">
+                            <div class="qrcodeBoxArrow"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="globalMask"></div>
+<ul class="uiAutocomplete uiFront uiMenu uiWidgetContent" id="uiId1" style="display: none;"></ul>
+<span class="uiHelperHiddenAcceddible" role="status" aria-live="assertive" aria-relevant="additions"></span>
+<ul class="bilibiliSuggest" style="top:43px;left:940px;display: none;min-width: 188px;max-width: 360px;"></ul>
+</body>
+</html>
